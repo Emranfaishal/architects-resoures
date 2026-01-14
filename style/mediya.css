@@ -13,10 +13,41 @@
     .section1 .img {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .section3 {
+        text-align: center;
+    }
+
+    .section3 .bos {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .section3 p {
+        width: 350px;
+    }
+
+    .section4 .img-icon {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 30px;
+        gap: 20px;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
     .section1 {
         flex-direction: column;
+        justify-items: center;
+    }
+
+    .section3 .bos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .section4 .img-icon {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 30px;
+        gap: 20px;
     }
 }
